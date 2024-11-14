@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Book", "price": 10.99 },
+  { "id": 2, "name": "Pencil", "price": 9.99 },
+  { "id": 3, "name": "Marker", "price": 12.99 },
+  { "id": 4, "name": "Pen", "price": 8.99 },
+  { "id": 5, "name": "Eraser", "price": 11.99 },
+  { "id": 6, "name": "Note Book", "price": 19.99 }
+]
