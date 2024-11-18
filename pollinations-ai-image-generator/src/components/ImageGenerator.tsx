@@ -23,7 +23,28 @@ const ImageGenerator: React.FC = () => {
   };
 
   return (
-    
+    <div className="container">
+      <h2>Pollinations AI Image Generator</h2>
+      <input
+        type="text"
+        value={prompt}
+        onChange={(e) => setPrompt(e.target.value)} // url/prompt/ရိုက်ထည့်လိုသော စကားလုံး
+        onKeyDown={enterKeyPress} // Enter ခေါက်ပြီး prompt ပို့ပေးနိုင်ရန်
+        placeholder="Enter your image prompt"
+      />
+      <button onClick={pollinateImage}>Pollinate</button>
+
+      {imgUrl && (
+        <div>
+          <h3>Pollinated Image</h3>
+          <img
+            src={imgUrl}
+            alt="Pollinated AI result"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </div>
+      )}
+    </div>
   );
 };
 
