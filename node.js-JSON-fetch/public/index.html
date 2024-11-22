@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node.js JSON Fetch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex flex-col items-center justify-center"
+  >
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-blue-600">JSON Data Viewer</h1>
+      <p class="text-gray-600 mt-2">
+        Fetch and display JSON data from the Node.js server
+      </p>
+    </header>
+
+    <!-- Container for displaying data -->
+    <div
+      id="data-container"
+      class="w-full max-w-3xl bg-white shadow-md rounded-lg p-6"
+    >
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Fetched Data</h2>
+      <div id="data-list" class="space-y-4">
+        <!-- Data will be inserted here dynamically -->
+        <p class="text-gray-500 text-center" id="loading-message">
+          Loading data...
+        </p>
+      </div>
+    </div>
+
+    <footer class="mt-12 text-gray-500">
+      <p>
+        Powered by <span class="font-bold text-blue-600">Node.js</span> and
+        <span class="font-bold text-blue-600">Tailwind CSS</span>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
