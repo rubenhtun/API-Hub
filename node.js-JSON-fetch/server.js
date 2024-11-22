@@ -20,3 +20,5 @@ const port = 3000;
 app.listen(port, () => {
   console.log("Server is running at port: " + port);
 });
+
+// terminal တွင် node server.js ဟုရိုက်ထည့်ပြီး local server တစ်ခုကို စတင်ပေးပါ။
