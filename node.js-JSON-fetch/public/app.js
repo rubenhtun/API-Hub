@@ -20,7 +20,7 @@ const fetchData = async () => {
     data.forEach((item) => {
       const food = document.createElement("div");
       food.className =
-        "flex items-center justify-between bg-gray-50 border rounded-lg p-4";
+        "flex items-center justify-between bg-gray-50 border rounded-lg p-4 mb-2";
       food.innerHTML = `
               <div>
                   <p class="text-lg font-bold text-gray-700">${item.name}</p>
