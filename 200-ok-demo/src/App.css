@@ -1,0 +1,96 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(135deg, #4a90e2, #007aff);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.response {
+  margin-top: 20px;
+  text-align: left;
+  background: #f1f8ff;
+  border: 1px solid #dfeaff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.response h2 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.response p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.loading {
+  margin-top: 20px;
+  color: #888;
+  font-style: italic;
+}
+
+.error {
+  margin-top: 20px;
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+}
